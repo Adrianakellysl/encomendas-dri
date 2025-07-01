@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Lora';
-  src: url('assets/Lora/Lora-Italic-VariableFont_wght.ttf') format('woff2'),
-       url('assets/Lora/Lora-VariableFont_wght.ttf') format('woff');
+  src: url('../assets/Lora/Lora-Italic-VariableFont_wght.ttf') format('woff2'),
+       url('../assets/Lora/Lora-VariableFont_wght.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
