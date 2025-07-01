@@ -24,7 +24,7 @@ Sistema simples e funcional para organização de encomendas do ateliê Dri Croc
 
 Clique no link abaixo para usar o sistema:
 
-🔗 [Acesse o projeto online](https://seu-usuario.github.io/encomendas-dri/)
+🔗 [Acesse o projeto online](https://adrianakellysl.github.io/encomendas-dri/)
 
 
 ## Melhorias futuras (planejadas)
