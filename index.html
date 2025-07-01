@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organização de encomendas - Dri Crochê</title>
+  <meta name="description" content="Organizador de encomendas para organização do atelier Dri Crochê">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body>
+  <main class="container">
+    <section class="inicio-container">
+      <img src="/assets/Dri Crochê.png" alt="Imagem de logo do atelier Dri Crochê">
+    <h1>Minhas Encomendas</h1>
+    </section>
+
+    <section class="containerModal">
+      <input type="text" id="inputAdicionarEncomenda" placeholder="Insira uma nova encomenda">
+      <button id="btnAdicionar">Adicionar</button>
+    </section>
+
+    <div>
+      <p id="mensagem"></p>
+    </div>
+
+    <section class="list">
+      <ul id="listaEncomendas">
+      </ul>
+
+      <div id="modal-detalhesEncomenda" class="hidden">
+        <button class="btnModal"><i class="bi bi-x" id="fecharModal"></i></button>
+        
+        <div id="detalhes">
+          <h3>Detalhes</h3>
+
+          <p><strong>Nome: </strong><span id="modalNomeEncomenda"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>

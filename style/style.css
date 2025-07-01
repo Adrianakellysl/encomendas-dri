@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('/assets/Lora/Lora-Italic-VariableFont_wght.ttf') format('woff2'),
+       url('/assets/Lora/Lora-VariableFont_wght.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lora', sans-serif;
+  background-image: url(/assets/fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #4E1F00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: linear-gradient(120deg, #ffe3ec, #e4c1f9);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  margin-top: 4rem;
+  max-height: 80%;
+  box-shadow: 0 4px 8px rgba(197, 153, 182, 0.4);
+}
+
+.inicio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.inicio-container img {
+  width: 5rem;
+}
+
+.containerModal {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+#inputAdicionarEncomenda {
+  outline: none;
+  border: 1px solid #DDA853;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 13px;
+  width: 50%;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+}
+
+#inputAdicionarEncomenda:focus {
+    border-color: #C599B6;
+    box-shadow: inset 0 2px 4px rgba(197, 153, 182, 0.2);
+}
+
+#btnAdicionar {
+  background-color: #a759b3;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#btnAdicionar:hover {
+  background-color: #c084cf;
+}
+
+#btnAdicionar:active {
+  transform: scale(0.85);
+}
+
+#btnAdicionar.animar {
+  animation: pulsar 0.3s ease;
+}
+
+@keyframes pulsar {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+#mensagem {
+  text-align: center;
+  font-size: 16px;
+  color: #823DA7;
+}
+
+#mensagem.erro {
+  color: #AF3E3E;
+}
+
+#mensagem.sucesso {
+  color: #437057;
+}
+
+ul#listaEncomendas {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  padding: 2px;
+}
+
+.list {
+  width: 85%;
+  color: #4B352A;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    margin-left: 10px;
+    background: #C890A7;
+}
+
+li {
+  background-color: #EFB6C8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #443627;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+  padding: 0.6rem;
+  font-size: 17px;
+  width: 100%;
+  margin: 0.3rem 0 0.3rem 0;
+  line-height: 22px;
+  transition: transform 0.2s ease; 
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.bi-pencil {
+  color: #A888B5;
+  transition: background-color 0.3s ease ;
+}
+.bi-pencil:hover {
+  color: #8174A0;
+}
+
+.bi-trash {
+  color: #e57373;
+}
+
+.bi-trash:hover {
+  color: #F79B72;
+}
+
+.bi-check-circle-fill {
+  color: #685752;
+}
+.concluido {
+  color: #8EB486;
+}
+
+.tarefa-concluida {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+span.texto-encomenda {
+  max-width: 250px; /* ou ajuste conforme o layout */
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  flex-grow: 1;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+#modal-detalhesEncomenda {
+  position: absolute;
+  z-index: 1000;
+  background-color: #E69DB8;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 300px;
+  min-height: 80px;
+  margin-top: -8rem;
+  margin-left: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 1, 2, 0.2);
+}
+
+.bi-x {
+  position: absolute;
+  font-size: 24px;
+  left: 18rem;
+  cursor: pointer;
+}
+
+.btnModal {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#detalhes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size: 14px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width <= 780px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .inicio-container img {
+   width: 4rem;
+  }
+
+ #inputAdicionarEncomenda {
+    font-size: 12px;
+    padding:8px 10px;
+  }
+
+  #btnAdicionar {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  ul li {
+    font-size: 13px;
+    gap: 20px;
+  }
+
+  #mensagem {
+    font-size: 12px;
+  }
+
+}
+
+@media (width <= 426px) {
+  .container {
+    width: 80%;
+  }
+  .inicio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .inicio-container img {
+    width: 2.5rem;
+  }
+  h1 {
+    font-size: 12px;
+  }
+
+  section.containerModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #inputAdicionarEncomenda {
+    width: 80%;
+    font-size: 8px;
+    margin-top: -1rem;
+  }
+
+  #btnAdicionar {
+    margin-top: 0.5rem;
+    width: 86%;
+    padding: 5px 9px;
+    font-size: 10px;
+  }
+
+  #mensagem {
+    font-size: 8px;
+  }
+
+  .list {
+    margin-top: -2rem;
+  }
+  #modal-detalhesEncomenda {
+    width: 180px;
+  }
+
+  .bi-x {
+    left: 11rem;
+  }
+}
