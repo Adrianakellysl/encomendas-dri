@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Lora';
-  src: url('/assets/Lora/Lora-Italic-VariableFont_wght.ttf') format('woff2'),
-       url('/assets/Lora/Lora-VariableFont_wght.ttf') format('woff');
+  src: url('assets/Lora/Lora-Italic-VariableFont_wght.ttf') format('woff2'),
+       url('assets/Lora/Lora-VariableFont_wght.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   font-family: 'Lora', sans-serif;
-  background-image: url(/assets/fundo.jpg);
+  background-image: url(../assets/fundo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
