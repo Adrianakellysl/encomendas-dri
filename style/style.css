@@ -245,8 +245,12 @@ h3 {
 }
 
 @media (width <= 780px) {
+  .container {
+    width: 60%;
+  }
+
   h1 {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .inicio-container img {
@@ -254,18 +258,18 @@ h3 {
   }
 
  #inputAdicionarEncomenda {
-    font-size: 12px;
-    padding:8px 10px;
+    font-size: 13px;
+    padding:12px;
   }
 
   #btnAdicionar {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 13px;
+    padding: 12px 25px;
   }
 
-  ul li {
-    font-size: 13px;
-    gap: 20px;
+  li {
+    font-size: 14px;
+    gap: 25px;
   }
 
   #mensagem {
@@ -276,7 +280,7 @@ h3 {
 
 @media (width <= 426px) {
   .container {
-    margin-top: -18rem;
+    margin-top: -15rem;
     width: 80%;
   }
 
@@ -310,7 +314,7 @@ h3 {
   }
 
   #mensagem {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   li {
