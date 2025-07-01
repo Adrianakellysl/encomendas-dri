@@ -280,17 +280,12 @@ h3 {
     width: 80%;
   }
 
-  .inicio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1rem;
-  }
   .inicio-container img {
-    width: 2.5rem;
+    width: 4rem;
   }
   h1 {
-    font-size: 14px;
+    
+    font-size: 16px;
   }
 
   section.containerModal {
@@ -302,24 +297,31 @@ h3 {
 
   #inputAdicionarEncomenda {
     width: 80%;
-    font-size: 10px;
+    font-size: 11px;
     margin-top: -1rem;
+    padding: 12px;
   }
 
   #btnAdicionar {
     margin-top: 0.5rem;
-    width: 86%;
-    padding: 10px 12px;
-    font-size: 10px;
+    width: 87.5%;
+    padding: 12px 12px;
+    font-size: 12px;
   }
 
   #mensagem {
     font-size: 8px;
   }
 
+  li {
+    width: 92%;
+  }
+
   .list {
+    width: 100%;
     margin-top: -2rem;
   }
+
   #modal-detalhesEncomenda {
     width: 180px;
   }
