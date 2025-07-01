@@ -1,47 +1,47 @@
 const modal = document.getElementById('modal-detalhesEncomenda')
 const btnFechar = document.getElementById('fecharModal')
-
-let encomendas = []
 const buttonAdicionar = document.getElementById('btnAdicionar')
-
-
 const dadosSalvos = localStorage.getItem('encomendas');
+const valorInput = document.getElementById('inputAdicionarEncomenda')
+const mensagem = document.getElementById('mensagem')//se o valor do input for vazio, mostre a msg de erro
+
+
+let encomendas = JSON.parse(localStorage.getItem('encomendas')) || []
+
 if (dadosSalvos) {
   encomendas = JSON.parse(dadosSalvos);
   mostrarEncomendasNaTela();
 }
 
 function AdicionarNovaEncomenda() {
-  //recebe valor do usuário
-  const valorInput = document.getElementById('inputAdicionarEncomenda')
+  encomendas.innerHTML = ""
   let valor = {
   Nome: valorInput.value.trim()
-}
+  }
 
-
-  const mensagem = document.getElementById('mensagem')
-  //se o valor do input for vazio, mostre a msg de erro
   if (valorInput.value.trim() == "") {
     const msgErro = "O campo está vazio, favor adicione uma nova encomenda!"
     mensagem.textContent = msgErro
     mensagem.className = "erro"
-      setTimeout(() => {
-      mensagem.textContent = ""; }, 2000)
+
+    setTimeout(() => {
+    mensagem.textContent = ""; }, 2000)
 
   } else {
+    encomendas.push(valor)
+    
     const msgSucesso = "Encomenda adicionada com sucesso!"
     mensagem.textContent = msgSucesso
     mensagem.className = "sucesso"
+
     setTimeout(() => {
-      mensagem.textContent = ""; }, 2000)
-
-    encomendas.push(valor)
-    mostrarEncomendasNaTela();
+      mensagem.textContent = ""; }, 2000)   
   }
-
+  mostrarEncomendasNaTela();
   //limpa o input do usuário
   valorInput.value = ""
 }
+
 
 function mostrarEncomendasNaTela() {
 //cria um li para um novo item da lista e insere na ul
@@ -94,19 +94,20 @@ function mostrarEncomendasNaTela() {
 
 function editarEncomenda(i){
   let encomendaEditada = prompt("Edite sua encomenda:", encomendas[i].Nome)
+
   if (encomendaEditada.trim() !== "") {
     encomendas[i].Nome = encomendaEditada.trim()
 
-    mostrarEncomendasNaTela()
   }
   localStorage.setItem('encomendas', JSON.stringify(encomendas));
+  mostrarEncomendasNaTela()
 }
 
 function excluirEncomenda(i){
   encomendas.splice(i, 1)
 
-  mostrarEncomendasNaTela()
   localStorage.setItem('encomendas', JSON.stringify(encomendas));
+  mostrarEncomendasNaTela()
 }
 
 function marcarComoConcluido(icone, texto) {
@@ -127,6 +128,18 @@ btnFechar.addEventListener('click', function (){
 buttonAdicionar.addEventListener('click', function(event) {
   event.preventDefault()
   AdicionarNovaEncomenda()
+})
+
+valorInput.addEventListener('keypress', function(event) {
+  if(event.key ==='Enter') {
+    event.preventDefault()
+    AdicionarNovaEncomenda()
+
+    buttonAdicionar.classList.add('animar')
+    setTimeout(() => {
+      buttonAdicionar.classList.remove('animar')
+    }, 300);
+  }
 })
 
 
