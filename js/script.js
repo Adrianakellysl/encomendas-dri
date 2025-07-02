@@ -81,8 +81,8 @@ function mostrarEncomendasNaTela() {
 
     novaEncomenda.appendChild(spanTexto)
     novaEncomenda.appendChild(iconChek)
-    novaEncomenda.appendChild(btneditarEncomenda)
-    novaEncomenda.appendChild(btnexcluirEncomenda)
+    novaEncomenda.appendChild(btnEditarEncomenda)
+    novaEncomenda.appendChild(btnExcluirEncomenda)
     listEncomendas.appendChild(novaEncomenda)
 
     spanTexto.textContent = encomendas[i].Nome
