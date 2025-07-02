@@ -34,7 +34,7 @@ Este projeto foi planejado e organizado utilizando os princípios do Scrum. As f
 
 Clique no link abaixo para usar o sistema:
 
-[Acesse o projeto online]()
+[Acesse o projeto online](https://github.com/Adrianakellysl/encomendas-dri/blob/main/assets/printJira.png)
 
 **Veja a aplicação em ação:**
 
