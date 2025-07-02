@@ -23,11 +23,18 @@ Sistema simples e funcional para organização de encomendas do ateliê Dri Croc
 - GitHub Pages: Hospedagem e deploy do projeto online.
 
 
+## 👨‍💻 Processo de Desenvolvimento e Gestão de Projetos
+
+Este projeto foi planejado e organizado utilizando os princípios do Scrum. As funcionalidades foram divididas em Epics (como o "Desenvolvimento do Organizador de Encomendas") e Histórias de Usuário (Stories) e gerenciadas como se fizessem parte de Sprints. Isso permitiu uma visão clara do escopo e progresso, além de praticar a definição de critérios de aceite para cada funcionalidade.
+
+**Visão Geral do Backlog e Stories no Jira:**
+[Jira]("C:\Adriana\ProjetoDriCrochê-Organizador de encomendas\assets\printJira.png")
+
 ## 🎬 Visualização
 
 Clique no link abaixo para usar o sistema:
 
-[Acesse o projeto online](https://adrianakellysl.github.io/encomendas-dri/)
+[Acesse o projeto online]()
 
 **Veja a aplicação em ação:**
 
