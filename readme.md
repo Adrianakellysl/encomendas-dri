@@ -31,7 +31,7 @@ Clique no link abaixo para usar o sistema:
 
 **Veja a aplicação em ação:**
 
-[Demonstração do Organizador de Encomendas](https://github.com/Adrianakellysl/encomendas-dri/blob/main/assets/Organizaodeencomendas-DriCrochemais26pginas-PessoalMicrosoftEdge2025-07-0212-48-10-ezgif.com-video-speed.mp4)
+[Demonstração do Organizador de Encomendas](https://github.com/Adrianakellysl/encomendas-dri/blob/main/assets/ezgif.com-speed.gif)
 
 **Visualização em Mobile:**
 ![Organizador de Encomendas em Mobile](https://github.com/Adrianakellysl/encomendas-dri/blob/main/assets/printMobile.png?raw=true)
@@ -59,5 +59,5 @@ Clique no link abaixo para usar o sistema:
 ## 👩‍💻 Autor 💜
 
 **Adriana Kelly**
-(Opcional: [Seu LinkedIn](https://www.linkedin.com/in/adriana-kelly-de-sousa-lima-134130220/))
-(Opcional: [Seu GitHub](https://github.com/Adrianakellysl))
+[Meu LinkedIn](https://www.linkedin.com/in/adriana-kelly-de-sousa-lima-134130220/)
+[Meu GitHub](https://github.com/Adrianakellysl)
