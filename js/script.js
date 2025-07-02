@@ -66,18 +66,18 @@ function mostrarEncomendasNaTela() {
     spanTexto.onclick = () => mostrarModal(encomendas[i]);
     
 
-    let btneditarEncomenda = document.createElement('i')
-    btneditarEncomenda.className = 'bi bi-pencil';
-    btneditarEncomenda.style.display = 'block';
-    btneditarEncomenda.style.cursor = 'pointer';
-    btneditarEncomenda.onclick = () => editarEncomenda(i)
+    let btnEditarEncomenda = document.createElement('i')
+    btnEditarEncomenda.className = 'bi bi-pencil';
+    btnEditarEncomenda.style.display = 'block';
+    btnEditarEncomenda.style.cursor = 'pointer';
+    btnEditarEncomenda.onclick = () => editarEncomenda(i)
     
 
-    let btnexcluirEncomenda = document.createElement('i')
-    btnexcluirEncomenda.className = 'bi bi-trash';
-    btnexcluirEncomenda.style.display = 'block';
-    btnexcluirEncomenda.style.cursor = 'pointer';
-    btnexcluirEncomenda.onclick = () => excluirEncomenda(i)
+    let btnExcluirEncomenda = document.createElement('i')
+    btnExcluirEncomenda.className = 'bi bi-trash';
+    btnExcluirEncomenda.style.display = 'block';
+    btnExcluirEncomenda.style.cursor = 'pointer';
+    btnExcluirEncomenda.onclick = () => excluirEncomenda(i)
 
     novaEncomenda.appendChild(spanTexto)
     novaEncomenda.appendChild(iconChek)
