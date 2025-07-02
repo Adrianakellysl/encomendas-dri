@@ -1,20 +1,20 @@
-# Organização de Encomendas - Dri Crochê
+# 📦 Organização de Encomendas - Dri Crochê
 
 Sistema simples e funcional para organização de encomendas do ateliê Dri Crochê. Desenvolvido com HTML, CSS e JavaScript puro, o aplicativo permite gerenciar suas encomendas de forma eficiente, com persistência dos dados utilizando o LocalStorage do navegador.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 * **Adição de Encomendas:** Insira e adicione novas encomendas à sua lista.
 * **Edição de Encomendas:** Altere o nome de encomendas existentes.
 * **Exclusão de Encomendas:** Remova itens da lista que não são mais necessários.
-* **Marcação de Concluído:** Indique facilmente o status de uma encomenda como concluída ou pendente.
+* **Marcação de Concluído:** Indique facilmente quando concluir uma encomenda.
 * **Persistência de Dados:** Suas encomendas são salvas automaticamente no navegador, garantindo que não se percam ao fechar a página.
 * **Interface Responsiva:** O layout se adapta a diferentes tamanhos de tela, proporcionando uma ótima experiência em dispositivos móveis e desktops.
 * **Usabilidade Aprimorada:** Adição de encomendas via tecla "Enter" e feedback visual para uma interação mais fluida.
 
 
 
-## Tecnologias usadas
+## 🚀 Tecnologias usadas
 
 - HTML5
 - CSS3 (com media queries e animações)
@@ -23,7 +23,7 @@ Sistema simples e funcional para organização de encomendas do ateliê Dri Croc
 - GitHub Pages: Hospedagem e deploy do projeto online.
 
 
-## Visualização
+## 🎬 Visualização
 
 Clique no link abaixo para usar o sistema:
 
